@@ -2,3 +2,59 @@ body {
     background-color: black;
     /* color: rgb(85,174,217,1); */
 }
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 80px;
+    font-style: italic;
+    color: rgb(157, 157, 157)
+}
+
+span {color: rgb(157, 157, 157)}
+.name {color:#3498db}
+
+.corner-triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #3498db;
+  border-left: 100px solid transparent;
+}
+
+/* Contact Page Settings */
+form {
+    width: 25%;
+    margin-bottom: 100px;
+}
+#message {
+    height: 150px;
+    resize: both;
+}
+
+label {color: rgb(157, 157, 157)}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: white;
+    border-color: #9ec9e2;
+    border-radius: 5px;
+}
+
+/* form mobile screens */
+@media (max-width: 492px) {
+    form {width: 80%;}
+    #contactH1 {font-size: 1.5rem;}
+}
+
+/* Thank you Page Settings */
+.thank_you {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
