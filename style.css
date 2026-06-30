@@ -1,7 +1,13 @@
 body {
     background-color: black;
+    color: grey;
     /* color: rgb(85,174,217,1); */
 }
+
+/* Navbar Element Settings */
+nav {position: fixed;}
+
+.navbar-custom {background-color: black;}
 
 h1 {
     text-align: center;
@@ -64,4 +70,44 @@ label {color: rgb(157, 157, 157)}
 .thank_you {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+/* old vs new */
+/* 2. Fix the image "squeeze" globally */
+.project-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  max-width: 400px; /* This is fine for desktop */
+  display: block;
+  margin: 0 auto; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 3. Force images to be full-width on Mobile */
+@media (max-width: 991px) {
+  .project-img {
+    max-width: 100% !important; 
+    width: 100% !important;
+  }
+    
+  /* This removes the 50px margins on the sides of the homepage on mobile */
+  .skills-container {
+    margin: 20px 10px !important;
+    padding: 20px 10px !important;
+  }
+
+  /* Adds spacing between the second skill section and the demo reel on mobile */
+  .skills-container .row-cols-1 > .col:last-child {
+    margin-bottom: 50px !important;
+  }
+}
+
+.engineering-text p {
+  text-align: left !important;
+  max-width: 100% !important;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
