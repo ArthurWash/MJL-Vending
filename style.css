@@ -20,6 +20,30 @@ h1 {
 span {color: rgb(157, 157, 157)}
 .name {color:#3498db}
 
+/* Skills Section */
+.skills-container {
+    background-color: #3498db;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.icon {
+    width: 50px;
+}
+
+.image-row {
+    display: flex;
+    gap: 20px;          /* Space between images */
+    justify-content: center; /* Optional */
+    margin-bottom: 20px;
+}
+
+.image-row img {
+    width: 48%;         /* Two images per row */
+    height: auto;
+}
+
 .corner-triangle {
   position: fixed;
   bottom: 0;
