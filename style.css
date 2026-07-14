@@ -28,9 +28,26 @@ span {color: rgb(157, 157, 157)}
     padding: 50px;
 }
 
+.skills {color: black;}
+
 .icon {
     width: 50px;
 }
+
+@media (min-width: 1024px) {
+    .skills-container {
+        width: 848px;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 909px) {
+    .skills-container {
+        width: 100%;
+        margin: 40px auto;
+    }
+}
+
 
 .image-row {
     display: flex;
