@@ -51,14 +51,30 @@ span {color: rgb(157, 157, 157)}
 
 .image-row {
     display: flex;
-    gap: 20px;          /* Space between images */
-    justify-content: center; /* Optional */
-    margin-bottom: 20px;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;   /* Controls how far apart the images can get */
+    margin: 0 auto 20px;
 }
 
 .image-row img {
-    width: 48%;         /* Two images per row */
+    flex: 1;
+    max-width: 440px;
+    width: 100%;
     height: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row img {
+        width: 100%;
+        max-width: 500px; /* Optional: prevents images from getting too wide */
+    }
 }
 
 .corner-triangle {
@@ -127,7 +143,7 @@ label {color: rgb(157, 157, 157)}
 }
 
 /* 3. Force images to be full-width on Mobile */
-@media (max-width: 991px) {
+@media (max-width: 450px) {
   .project-img {
     max-width: 100% !important; 
     width: 100% !important;
